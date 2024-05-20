@@ -1,0 +1,8 @@
+{
+  "label": "Mapeados",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Explore as diferentes seções da documentação para obter mais informações sobre a configuração, execução, relatórios, plugins e outros aspectos relacionados à automação."
+  }
+}

@@ -1,0 +1,70 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #d92028;
+  --ifm-color-primary-dark: #b8161e;
+  --ifm-color-primary-darker: #7a0e13;
+  --ifm-color-primary-darkest: #530b0e;
+  --ifm-color-primary-light: #e31822;
+  --ifm-color-primary-lighter: #f10b17;
+  --ifm-color-primary-lightest: #e83740;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #d92028;
+  --ifm-color-primary-dark: #b8161e;
+  --ifm-color-primary-darker: #7a0e13;
+  --ifm-color-primary-darkest: #530b0e;
+  --ifm-color-primary-light: #e31822;
+  --ifm-color-primary-lighter: #f10b17;
+  --ifm-color-primary-lightest: #e83740;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 800px;
+  margin: 15px auto; /* Adiciona uma margem de 20px na parte superior e inferior do formulário */
+}
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+button {
+  grid-column: span 2;
+  padding: 10px 20px;
+  background-color: #d92028;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #1b4a3a
+}

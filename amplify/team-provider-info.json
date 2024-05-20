@@ -1,0 +1,25 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-authawshondadocs-dev-103049-authRole",
+      "UnauthRoleArn": "arn:aws:iam::058758721812:role/amplify-authawshondadocs-dev-103049-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::058758721812:role/amplify-authawshondadocs-dev-103049-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-authawshondadocs-dev-103049-deployment",
+      "UnauthRoleName": "amplify-authawshondadocs-dev-103049-unauthRole",
+      "StackName": "amplify-authawshondadocs-dev-103049",
+      "StackId": "arn:aws:cloudformation:us-east-1:058758721812:stack/amplify-authawshondadocs-dev-103049/c0964700-dbbd-11ee-8cae-0a162450e2f5",
+      "AmplifyAppId": "dg1ddb9ia87nt"
+    },
+    "categories": {
+      "auth": {
+        "authawshondadocsf1cbc9e9": {
+          "userPoolId": "us-east-1_wlLOO7UyT",
+          "userPoolName": "auth-cognito-hondadocs",
+          "webClientId": "6n4s32ku9evprfd29d3g61nv99",
+          "nativeClientId": "6n4s32ku9evprfd29d3g61nv99"
+        }
+      }
+    }
+  }
+}

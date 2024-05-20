@@ -1,0 +1,207 @@
+backend:
+  name: github
+  repo: mdfreitastf/hondadocs_cnh
+  branch: main
+publish_mode: editorial_workflow
+
+
+# These lines should *not* be indented
+media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/img/" # The src attribute for uploaded media will begin with /images/uploads
+logo_url: https://mobyandocs.netlify.app/img/bancohonda_logo.png
+
+
+collections:
+- name: blog
+  label: "Blog (Novidades)"
+  folder: blog
+  extension: md
+  widget: "list"
+  create: true
+  slug: "{{year}}-{{month}}-{{day}}-{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  preview_path: "blog/{{slug}}"
+  fields:
+    - { name: title, label: Title, widget: string }
+    - { name: body, label: Body, widget: markdown }
+    - label: "Tags"
+      name: "tags"
+      widget: "list"
+    - label: "Authors"
+      name: "authors" 
+      widget: "string"
+
+# configuracoes mobile
+
+- name: "mobile-intro-menu"
+  label: "Mobile - Introdução/Menu"
+  files:
+    - file: "docs/mobile/intro.md"
+      label: "Introdução/Menu"
+      name: "intro"
+      preview_path: "preview{{slug}}"
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "markdown"}
+        - {label: "Tags", name: "tags", widget: "list", required: false}
+
+- name: "mobile-automacao"
+  label: "Mobile - Automação"
+  folder: "docs/mobile/automacao"
+  create: true
+  slug: "{{slug}}" #testebraber
+  preview_path: "docs/mobile/automacao/{{slug}}"
+  fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+    - label: "Tags"
+      name: "tags"
+      required: false
+      widget: "list"
+    - label: "Sidebar Position"
+      name: "sidebar_position" 
+      widget: "string"
+
+- name: "mobile-aplicacao"
+  label: "Mobile - Aplicação"
+  folder: "docs/mobile/aplicacao"
+  create: true
+  slug: "{{slug}}" #testebraber
+  preview_path: "docs/mobile/aplicacao/{{slug}}"
+  fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+    - label: "Tags"
+      name: "tags"
+      required: false
+      widget: "list"
+    - label: "Sidebar Position"
+      name: "sidebar_position" 
+      widget: "string"
+
+- name: "mobile-backend"
+  label: "Mobile - Backend"
+  folder: "docs/mobile/backend"
+  create: true
+  slug: "{{slug}}" #testebraber
+  preview_path: "docs/mobile/backend/{{slug}}"
+  fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+    - label: "Tags"
+      name: "tags"
+      required: false
+      widget: "list"
+    - label: "Sidebar Position"
+      name: "sidebar_position" 
+      widget: "string"
+
+- name: "mobile-referencias"
+  label: "Mobile - Referências"
+  folder: "docs/mobile/referencias"
+  create: true
+  slug: "{{slug}}" #testebraber
+  preview_path: "docs/mobile/referencias/{{slug}}"
+  fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+    - label: "Tags"
+      name: "tags"
+      required: false
+      widget: "list"
+    - label: "Sidebar Position"
+      name: "sidebar_position" 
+      widget: "string"
+
+#configuracoes web
+
+- name: "web-intro-menu"
+  label: "Web - Introdução/Menu"
+  files:
+    - file: "docs/web/intro.md"
+      label: "Introdução/Menu"
+      name: "intro"
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "markdown"}
+        - {label: "Tags", name: "tags", widget: "list", required: false}
+        # - {label: "Authors", name: "authors", widget: "string", required: false}
+
+- name: "web-automacao"
+  label: "Web - Automação"
+  folder: "docs/web/automacao"
+  create: true
+  slug: "{{slug}}" #testebraber
+  preview_path: "docs/web/automacao/{{slug}}"
+  fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+    - label: "Tags"
+      name: "tags"
+      required: false
+      widget: "list"
+    - label: "Sidebar Position"
+      name: "sidebar_position" 
+      widget: "string"
+
+- name: "web-backend"
+  label: "Web - Backend"
+  folder: "docs/web/backend"
+  create: true
+  slug: "{{slug}}" #testebraber
+  preview_path: "docs/web/backend/{{slug}}"
+  fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+    - label: "Tags"
+      name: "tags"
+      required: false
+    - label: "Sidebar Position"
+      name: "sidebar_position" 
+      widget: "string"
+      
+- name: "web-frontend"
+  label: "Web - Frontend"
+  folder: "docs/web/frontend"
+  create: true
+  slug: "{{slug}}" #testebraber
+  preview_path: "docs/web/frontend/{{slug}}"
+  fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+    - label: "Tags"
+      name: "tags"
+      required: false
+      widget: "list"
+    - label: "Sidebar Position"
+      name: "sidebar_position" 
+      widget: "string"
+
+
+- name: "web-referencias"
+  label: "Web - Referências"
+  folder: "docs/web/referencias"
+  create: true
+  slug: "{{slug}}" #testebraber
+  preview_path: "docs/web/referencias/{{slug}}"
+  fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+    - label: "Tags"
+      name: "tags"
+      required: false
+      widget: "list"
+    - label: "Sidebar Position"
+      name: "sidebar_position" 
+      widget: "string"
+      
+- name: processos
+  label: "Processos"
+  folder: "docs/processos"
+  create: true
+  slug: "{{slug}}" 
+  preview_path: "docs/processos/{{slug}}"
+  fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+    - {label: "Tags", name: "tags", widget: "list"}
+

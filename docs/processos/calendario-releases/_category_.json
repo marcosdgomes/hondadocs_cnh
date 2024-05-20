@@ -1,0 +1,10 @@
+{
+  "label": "Calendário de Releases",
+  "position": 2,
+  
+  "link": {
+    "type": "generated-index",
+    "slug": "processos/releases"
+
+  }
+}
