@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: mdfreitastf/hondadocs_cnh
+  repo: marcosdgomes/hondadocs_cnh
   branch: main
 publish_mode: editorial_workflow
 
@@ -8,7 +8,7 @@ publish_mode: editorial_workflow
 # These lines should *not* be indented
 media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/img/" # The src attribute for uploaded media will begin with /images/uploads
-logo_url: https://mobyandocs.netlify.app/img/bancohonda_logo.png
+logo_url: https://hondadocs-cnh.netlify.app/img/bancohonda_logo.png
 
 
 collections:

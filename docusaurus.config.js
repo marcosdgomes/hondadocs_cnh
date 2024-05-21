@@ -95,7 +95,7 @@ const config = {
           {to: '/reports', label: 'Relatórios', position: 'left'},
 
           {
-            href: 'https://qa-stefanini.atlassian.net/jira/software/projects/EAQ/boards/1',
+            href: 'https://team-1602686177325.atlassian.net/jira/software/c/projects/HCV/boards/78',
             label: 'Board - Engenharia de Automação e QA',
             position: 'right',
           },
@@ -120,7 +120,7 @@ const config = {
             ],
           },
           {
-            title: 'Ambientes - Honda',
+            title: 'Ambientes - CNH',
             items: [
               {
                 label: 'Sandbox',
